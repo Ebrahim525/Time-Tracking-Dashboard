@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="profile-card">
+      <div class="profile-info">
+        <img class="profile-pic" src="images/image-jeremy.png" alt="Profile Picture">
+        <p class="p">Report for</p>
+        <h1 class="name">Jeremy Robson</h1>
+      </div>
+      <div class="timeframes">
+        <button class="active" data-timeframe="daily">Daily</button>
+        <button data-timeframe="weekly">Weekly</button>
+        <button data-timeframe="monthly">Monthly</button>
+      </div>
+    </div>
+    <div class="activity-cards">
+
+      <!-- Work Card -->
+      <div class="activity-card work">
+        <div class="card-content">
+          <p class="card-title"><span>Work</span><span class="idk">...</span></p>
+          <div class="card-stats">
+            <h3>5hrs</h3>
+            <h4>Last Day - 7hrs</h4>
+          </div>
+          <div class="card-extra">
+            <p><strong>Breakdown:</strong> Meetings, Coding</p>
+            <p><strong>Upcoming Deadline:</strong> Presentation by Friday</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Play Card -->
+      <div class="activity-card play">
+        <div class="card-content">
+          <p class="card-title"><span>Play</span><span class="idk">...</span></p>
+          <div class="card-stats">
+            <h3>2hrs</h3>
+            <h4>Last Day - 3hrs</h4>
+          </div>
+          <div class="card-extra">
+            <p><strong>Breakdown:</strong> Gaming, Movies</p>
+            <p><strong>Top Highlight:</strong> Completed Level 5</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Study Card -->
+      <div class="activity-card study">
+        <div class="card-content">
+          <p class="card-title"><span>Study</span><span class="idk">...</span></p>
+          <div class="card-stats">
+            <h3>1hr</h3>
+            <h4>Last Day - 2hrs</h4>
+          </div>
+          <div class="card-extra">
+            <p><strong>Topics Covered:</strong> Physics</p>
+            <p><strong>Next Steps:</strong> Revise for Friday's test.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exercise Card -->
+      <div class="activity-card exercise">
+        <div class="card-content">
+          <p class="card-title"><span>Exercise</span><span class="idk">...</span></p>
+          <div class="card-stats">
+            <h3>1hr</h3>
+            <h4>Last Day - 1hr</h4>
+          </div>
+          <div class="card-extra">
+            <p><strong>Activities:</strong> Running (3km)</p>
+            <p><strong>Calories Burned:</strong> 300 kcal</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Card -->
+      <div class="activity-card social">
+        <div class="card-content">
+          <p class="card-title"><span>Social</span><span class="idk">...</span></p>
+          <div class="card-stats">
+            <h3>1hr</h3>
+            <h4>Last Day - 3hrs</h4>
+          </div>
+          <div class="card-extra">
+            <p><strong>Interactions:</strong> Call with friends</p>
+            <p><strong>Highlight:</strong> Shared exciting news</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Self Care Card -->
+      <div class="activity-card self-care">
+        <div class="card-content">
+          <p class="card-title"><span>Self Care</span><span class="idk">...</span></p>
+          <div class="card-stats">
+            <h3>0hrs</h3>
+            <h4>Last Day - 1hr</h4>
+          </div>
+          <div class="card-extra">
+            <p><strong>Activities:</strong> Meditation (10 mins)</p>
+            <p><strong>Reflection:</strong> What did you appreciate most about today?</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Muhammad Ebrahim</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
