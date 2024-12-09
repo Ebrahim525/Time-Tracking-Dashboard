@@ -405,10 +405,4 @@ body{
   .name{
     padding-left: 20vh;
   }
-
-  .activity-card:hover .card-extra {
-    display: none;
-    margin: 0;
-    padding: 0px;
-  }
 }
