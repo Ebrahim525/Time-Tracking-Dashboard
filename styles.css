@@ -294,89 +294,115 @@ body{
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  body {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
   }
 
-  .profile-card, .activity-card {
-    width: 90%; /* Take full width on smaller screens */
+  h3{
+    width: auto;
+    display: inline;
   }
 
-  .activity-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  .card-content{
+    padding-right: 0px;
+    padding-bottom: 20px;
   }
 
-  .card-content {
-    padding: 10px;
-    height: auto; /* Adjust for smaller screens */
+  .timeframes{
+    flex-direction: row;
+    justify-content: space-around;
   }
 
-  h3 {
-    font-size: 5vh; /* Reduce size for mobile */
-  }
-
-  h4 {
-    font-size: 1.5vh; /* Adjust font size */
-  }
-
-  .name {
-    font-size: 4vh; /* Adjust font size */
+  .profile-card {
+    width: 100%;
+    padding: 1rem;
   }
 
   .profile-info img {
-    width: 60px; /* Adjust for smaller screens */
-    height: 60px;
+    width: 70px;
+    height: 70px;
   }
 
-  .activity-card, .profile-pic {
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  .name {
+    font-size: 1.5rem;
   }
-  
-  .activity-card:hover,
-  .activity-card:active,
-  .profile-pic:hover,
-  .profile-pic:active {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 30px #ffffff;
+
+  .timeframes button {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
   }
-  
-  .profile-pic:hover {
-    border: none;
-    transform: scale(1.5);
+
+  .activity-cards {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    width: 100%;
   }
-  
-  .profile-pic:active {
-    transform: scale(1.5);
-  }
-  
-  .activity-card:hover .card-extra,
-  .activity-card:active .card-extra {
-    display: block;
-    margin: 0;
-    padding: 0px;
-  }
-  
+
   .activity-card {
-    transition: filter 0.25s ease;
+    padding: 1rem;
   }
-  
-  /* Ensure touch interactions behave similarly */
-  .activity-card:active {
-    filter: none;
-    transform: scale(1.05);
-    box-shadow: 0px 0px 30px #ffffff;
+
+  .card-title {
+    font-size: 1rem;
   }
-  
-  .profile-pic:active {
-    transform: scale(1.5);
-    transition: transform 0.25s ease;
+
+  h3 {
+    font-size: 1.8rem;
   }
-  
-  /* Optional: Add a click event handler in JavaScript for more complex touch interactions */
-  
+
+  h4 {
+    font-size: 0.8rem;
+  }
+  .activity-card{
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  h4{
+    width: auto;
+    margin-right: 20px;
+    display: inline-block;
+    margin-left: 30%;
+  }
+
+  .profile-card{
+    padding: 0;
+  }
+
+  .idk{
+    padding-right: 20px;
+  }
+
+  .profile-info{
+    padding: 20px;
+    height: auto;
+  }
+  .profile-info p{
+    padding-left: 20vh;
+    display: inline;
+    width: 40%;
+  }
+
+
+  .profile-pic{
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 40px;
+  }
+
+  .name{
+    padding-left: 20vh;
+  }
 }
